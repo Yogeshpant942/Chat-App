@@ -1,4 +1,4 @@
-package com.example.Model
+package com.example.chatappreal.Model
 
 class Users(
      var uid:String = "",
@@ -8,5 +8,6 @@ class Users(
      var search:String = "",
      var facebook:String = "",
      var instagram:String = "",
-     var website:String = ""
+     var website:String = "",
+    var status:String = ""
 )

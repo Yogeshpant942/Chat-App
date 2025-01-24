@@ -9,8 +9,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.core.widget.addTextChangedListener
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.Adapter.UserAdapter
-import com.example.Model.Users
+import com.example.chatappreal.Adapter.UserAdapter
+import com.example.chatappreal.Model.Users
 import com.example.chatappreal.R
 import com.example.chatappreal.databinding.FragmentSearchBinding
 import com.google.firebase.auth.FirebaseAuth
@@ -22,7 +22,7 @@ import java.util.Locale
 
 
 class SearchFragment : Fragment() {
-    lateinit var adapter:UserAdapter
+    lateinit var adapter: UserAdapter
     lateinit var list : ArrayList<Users>
     lateinit var binding:FragmentSearchBinding
 
@@ -88,7 +88,7 @@ class SearchFragment : Fragment() {
             override fun onDataChange(snapshot: DataSnapshot) {
                 list.clear()
                 for(Data in snapshot.children){
-                    val user:Users? = Data.getValue(Users::class.java)
+                    val user: Users? = Data.getValue(Users::class.java)
                     if(user!!.uid != firebaseUserId){
                         list.add(user)
                     }

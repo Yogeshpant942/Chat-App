@@ -12,7 +12,7 @@ import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.core.net.toUri
 import com.bumptech.glide.Glide
-import com.example.Model.Users
+import com.example.chatappreal.Model.Users
 import com.example.chatappreal.databinding.FragmentSettingBinding
 import com.google.android.gms.tasks.Continuation
 import com.google.android.gms.tasks.Task
@@ -124,7 +124,7 @@ class SettingFragment : Fragment() {
                   mapSocial["facebook"] = "https://m.facebook.com${str}"
               }
               "instagram"->{
-                  mapSocial["instagram"] = "https://m.facebook.com${str}"
+                  mapSocial["instagram"] = "https://m.intagram.com${str}"
               }
               "facebook"->{
                   mapSocial["website"] = "https://${str}"

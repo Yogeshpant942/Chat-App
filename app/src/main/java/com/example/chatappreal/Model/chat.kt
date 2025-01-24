@@ -1,4 +1,4 @@
-package com.example.Model
+package com.example.chatappreal.Model
 
 class chat {
      val sender:String = ""
